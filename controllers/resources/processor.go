@@ -257,7 +257,6 @@ func (r *Processor) createOrUpdate(ctx context.Context, obj *unstructured.Unstru
 				actual.SetNamespace(ns)
 				actual.SetLabels(labels)
 				actual.SetAnnotations(annotations)
-				actual.SetResourceVersion("")
 				actual.SetUID(UID)
 
 				return nil
